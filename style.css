@@ -75,7 +75,7 @@ h2 {
 
 h1 {
   font-size: 5rem;
-  font-size: 72px;
+  /* font-size: 72px; */
   background: -webkit-radial-gradient(#6e726e, #acafe3);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -278,7 +278,7 @@ a:hover {
 }
 #submit {
   margin-top: 1rem;
-  background-color: red;
+  background-color: rgb(255, 255, 255);
   border-radius: 28px;
   padding-top: 0.7rem;
   padding-right: 2.1rem;
@@ -313,7 +313,13 @@ footer {
 }
 
 
-
+#repo1 ,#sendbutton{
+  color: #000000;
+}
+#repo1:hover{
+  box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.6);
+  transform: scale(1.04);
+}
 
 
 .card {
@@ -347,7 +353,7 @@ img {
   -webkit-text-fill-color: transparent;
 }
 #memo{
-  width: 80rem;
+  width: auto;
   height: 50rem;
   text-align: justify;
 }

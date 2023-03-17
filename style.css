@@ -138,6 +138,7 @@ a:hover {
   background: linear-gradient(90deg, #d9042e 0%, #37406f 100%);
 }
 
+
 /* Section 2*/
 
 .projects-section {
@@ -313,10 +314,18 @@ footer {
 }
 
 
-#repo1 ,#sendbutton{
+#repo1, #repo2, #repo3 ,#sendbutton{
   color: #000000;
 }
 #repo1:hover{
+  box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.6);
+  transform: scale(1.04);
+}
+#repo2:hover{
+  box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.6);
+  transform: scale(1.04);
+}
+#repo3:hover{
   box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.6);
   transform: scale(1.04);
 }

@@ -4,7 +4,7 @@ This is a fully responsive single page personal portfolio website, built using H
 
 Website Demo: (https://abdulzahidshaik.github.io/WEBDEVPROJECT/)
 
-Website contains:
+#Website contains:
 
 Header
 
@@ -12,7 +12,7 @@ Home
 
 About
 
-Previous Work
+#Previous Work
 
 Projects
 
@@ -21,7 +21,7 @@ Contact
 Footer
 
 How to run the code
-Clone the repository by using:
+#Clone the repository by using:
 
 git clone git@github.com:AbdulZahidShaik/WEBDEVPROJECT.git or you can download the repo and unzip it. 
 
@@ -31,7 +31,7 @@ All necessary Javascript and CSS files are already linked to HTML file, and all 
 
 I only checked the website for screen sizes at 414px, 768px, and 1024px.
 
-Technologies Used
+#Technologies Used
 
 HTML5
 
@@ -43,20 +43,20 @@ Bootstrap
 
 GitHub
 
-EXTERNAL SOURCES/REFERENCES:
+#EXTERNAL SOURCES/REFERENCES:
 
 https://www.w3schools.com/
 
 https://stackoverflow.com/
 
-Icons
+#Icons
 
 https://fontawesome.com/icons
 
 https://www.w3schools.com/icons/fontawesome_icons_webapp.asp
 
 
-MDN Web Documentation
+#MDN Web Documentation
 
 https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries
 

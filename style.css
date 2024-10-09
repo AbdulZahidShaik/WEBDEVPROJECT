@@ -5,6 +5,7 @@
 * {
   margin: 0;
   padding: 0;
+  background-color: #1f1f1f;
 }
 
 /* box-sizing and font sizing */
@@ -66,12 +67,8 @@ img {
   width: 100%;
 }
 
-h1,
-h2 {
-  font-family: "Raleway", sans-serif;
-  font-weight: 700;
-  text-align: center;
-}
+
+
 
 h1 {
   font-size: 5rem;
@@ -80,28 +77,30 @@ h1 {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-
-h2 {
-  font-size: 4.2rem;
-  color: #2196f3;
-  border: 0.5px solid #ddd;
+#memo p{
+  font-size: 2.5rem;
+  font-family: Arial, Helvetica, sans-serif;
+  background: -webkit-radial-gradient(#6e726e, #acafe3);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  
 }
 p {
-  font-size: 2rem;
-  color: #e1bee7;
+  font-size: 3rem;
+  color: #ffffff;
 }
 
 /* Navigation Bar Styling */
 
 .nav {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: auto;
-  background: #000000;
+  
   box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
   z-index: 10;
 }
@@ -130,20 +129,232 @@ a:hover {
 
 #welcome-section {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  width: 100%;
-  height: 120vh;
-  background: linear-gradient(90deg, #d9042e 0%, #37406f 100%);
+  padding: 4rem;
+  
+/* background: black; */
+}
+#myimgs {
+  height: auto; 
+  width: 30rem; 
+  margin-top: 0%;
+  border-radius: 1rem;
+  
+  
+  
 }
 
-/* Section 2*/
+#text-content {
+  max-width: 100rem; /* Limit the width of the text */
+  padding: 2rem;
+  box-sizing: border-box;
+}
+.cs-student {
+  font-family: "Raleway", sans-serif !important;
+  font-size: 3.5rem !important;
+  color: #4778a0 !important;
+  text-align: center !important; /* Adjust as per your needs */
+  font-weight: 700 !important;
+  border: none;
+  
+}
+.cs-student1 {
+  font-size: 2.5rem;
+  font-family: Arial, Helvetica, sans-serif;
+  background: -webkit-radial-gradient(#6e726e, #acafe3);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  border: none;
+  text-align: left !important; /* Adjust as per your needs */
+  
+  
+}
+
+h2 {
+  font-size: 4.2rem;
+  color: #4778a0;
+  border: 0.5px solid #ddd;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  text-align: center;
+}
+/*section resume*/
+#resume {
+  padding: 2rem;
+  background-color: none;
+}
+
+.resume-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.resume-text {
+  flex: 1;
+  padding: 2rem;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.resume-pdf {
+  flex: 0.4;
+  text-align: center;
+}
+
+.resume-pdf a {
+  text-decoration: none;
+  color: #333;
+}
+
+.resume-pdf .pdf-icon {
+  width: 200px; /* Adjust size as needed */
+  height: auto;
+  cursor: pointer;
+  transition: transform 0.3s;
+  display: block;
+  margin: 0 auto;
+}
+
+.resume-pdf p {
+  margin-top: 10px;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #007bff; /* Change to match your theme */
+}
+
+.resume-pdf .pdf-icon:hover {
+  transform: scale(1.05); /* Slight enlarge effect on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .resume-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .resume-text, .resume-pdf {
+    flex: 1;
+    margin: 1rem 0;
+  }
+
+  .resume-pdf .pdf-icon {
+    width: 150px; /* Smaller size for smaller screens */
+  }
+}
+
+
+/* Experience Section */
+/* Experience Section */
+#experience {
+  background-color: none; /* Adjusted background color */
+  padding: 2rem;
+  color: white;
+}
+
+.experience-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.experience-header {
+  text-align: left;
+  margin-bottom: 2rem;
+}
+
+.experience-header h3 {
+  font-size: 1rem;
+  
+  letter-spacing: 1.5px;
+}
+
+.experience-header h1 {
+  font-size: 2.5rem;
+  font-family: Arial, Helvetica, sans-serif;
+  background: -webkit-radial-gradient(#6e726e, #acafe3);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.experience-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+  
+}
+
+.image-container {
+  width: 100rem; /* Adjust as needed */
+}
+
+.experience-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px; /* Optional: add a border-radius to the image */
+}
+
+.company-info {
+  flex-grow: 1;
+  padding-left: 2rem;
+  
+}
+.company-info #subdate{
+  font-size: 1.5rem;
+  align-items: center;
+}
+.company-info h2 {
+  font-size: 3.5vh;
+  font-family: Arial, Helvetica, sans-serif;
+  background: -webkit-radial-gradient(#6e726e, #acafe3);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  border: none;
+  text-align: left;
+}
+
+ul {
+  list-style-type: none; /* Optional: Remove default bullets */
+  padding: 0; /* Remove default padding */
+}
+
+ul li {
+  margin-bottom: 2rem; /* Adjust the value for desired spacing */
+}
+
+
+.company-info ul {
+  font-size: 2.5vh;
+  line-height: 1.5;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .experience-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .image-container {
+    margin-bottom: 1.5rem;
+  }
+
+  .company-info {
+    padding-left: 0;
+  }
+}
+
+
+
+/* Section 3*/
 
 .projects-section {
   text-align: center;
   padding: 10rem 2rem;
-  background: #eceff1;
+  
 }
 .projects-section-header {
   max-width: 640px;

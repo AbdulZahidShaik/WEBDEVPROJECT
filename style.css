@@ -78,12 +78,12 @@ h1 {
   -webkit-text-fill-color: transparent;
 }
 #memo p{
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-family: Arial, Helvetica, sans-serif;
   background: -webkit-radial-gradient(#6e726e, #acafe3);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  
+  text-align: left;
 }
 p {
   font-size: 3rem;
@@ -98,8 +98,10 @@ p {
   position: fixed;
   top: 0;
   left: 0;
+  font-size: 2rem;
   width: 100%;
   height: auto;
+  padding: 6px;
   
   box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
   z-index: 10;
@@ -131,8 +133,9 @@ a:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 4rem;
-  
+  padding: 20rem 4rem 1rem 4rem;
+  height: 60rem;
+  z-index: 1;
 /* background: black; */
 }
 #myimgs {
@@ -140,14 +143,13 @@ a:hover {
   width: 30rem; 
   margin-top: 0%;
   border-radius: 1rem;
-  
-  
+  margin-bottom: 114px;
   
 }
 
 #text-content {
   max-width: 100rem; /* Limit the width of the text */
-  padding: 2rem;
+  padding: 3rem;
   box-sizing: border-box;
 }
 .cs-student {
@@ -347,85 +349,83 @@ ul li {
   }
 }
 
+/* project section */
+#projects {
+  padding: 40px;
+  background-color: none;
+  width: auto;
+}
 
-
-/* Section 3*/
-
-.projects-section {
+#projects h2 {
   text-align: center;
-  padding: 10rem 2rem;
-  
-}
-.projects-section-header {
-  max-width: 640px;
-  margin: 3rem auto 6rem auto;
-  border-bottom: 0 solid white;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  border-radius: 38px;
-  word-spacing: 4px;
-  letter-spacing: 3px;
-  box-shadow: 0 5px 20px #ddd;
-}
-@media (max-width: 28.75em) {
-  .projects-section-header {
-    font-size: 4rem;
-  }
+  margin-bottom: 20px;
+  font-size: 2.5rem;
+  border: none;
 }
 
-.projects-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  grid-gap: 4rem;
+.projects-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px; /* Space between cards */
+}
+
+.project-card {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  overflow: hidden;
+  border-radius: 10px; /* Optional: adds rounded corners */
+  /*box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: shadow for card */
+  transition: transform 0.3s;
+}
+
+.project-card #hand-game-text{
+  font-size: 1rem;
+}
+
+.project-card:hover {
+  transform: scale(1.05); /* Slightly enlarge card on hover */
+}
+
+.project-card img {
   width: 100%;
-  max-width: 1280px;
-  margin: 0 auto;
-  margin-bottom: 6rem;
-}
-@media (max-width: 30.625em) {
-  .projects-section {
-    padding: 6rem 1rem;
-  }
-
-  .projects-grid {
-    grid-template-columns: 1fr;
-  }
-}
-.project {
-  background: #ad1457;
-  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
-  border-radius: 28px;
-  box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
-    0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06),
-    0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086),
-    0 100px 80px rgba(0, 0, 0, 0.12);
-  transition: all 2s, transform 0.5s, box_shadow 0.5s;
-}
-.project:hover {
-  box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.6);
-  transform: scale(1.08);
+  height: 100%;
+  object-fit: cover; /* Maintain aspect ratio */
 }
 
-.project-image {
-  height: calc(100% - 6.8rem);
-  width: 100%;
-  object-fit: cover;
-  border-top-right-radius: 28px;
-  border-top-left-radius: 28px;
-}
-.project-title {
-  font-family: "Poppins", sans-serif;
-  font-size: 2rem;
-  text-align: center;
-  padding: 2rem 0.5rem;
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
   color: #fff;
-  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0; /* Hidden by default */
+  transition: opacity 0.3s;
 }
-.btn {
-  display: inline-block;
-  padding: 1rem 2rem;
-  border-radius: 2px;
+
+.project-card:hover .overlay {
+  opacity: 1; /* Show overlay on hover */
 }
+
+h3 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+p {
+  text-align: center;
+  margin: 5px 0 0 0;
+}
+
+
+
 
 /* Contact section */
 .contact-section {
@@ -437,7 +437,7 @@ ul li {
   width: 100%;
   height: 80vh;
   padding: 0 2rem;
-  background: #363748;
+  
 }
 .contact-section-header > h2 {
   font-size: 6rem;

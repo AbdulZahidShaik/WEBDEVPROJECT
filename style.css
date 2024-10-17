@@ -148,7 +148,7 @@ a:hover {
 }
 
 #text-content {
-  max-width: 100rem; /* Limit the width of the text */
+  max-width: 150rem; /* Limit the width of the text */
   padding: 3rem;
   box-sizing: border-box;
 }
